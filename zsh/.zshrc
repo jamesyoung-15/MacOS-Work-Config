@@ -1,6 +1,5 @@
-bindkey '\e\x7f' backward-kill-word
-bindkey '\e[1;3D' backward-word
-bindkey '\e[1;3C' forward-word
+# fix word skip over certain characters: https://github.com/kovidgoyal/kitty/issues/838
+export WORDCHARS='*?_-.[]~&;!#$%^(){}<>'
 
 autoload -Uz compinit
 compinit
