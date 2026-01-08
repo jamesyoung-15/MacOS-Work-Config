@@ -5,3 +5,4 @@ bindkey '\e[1;3C' forward-word
 autoload -Uz compinit
 compinit
 eval "$(starship init zsh)"
+fastfetch
