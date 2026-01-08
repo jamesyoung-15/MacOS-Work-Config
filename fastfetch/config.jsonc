@@ -17,16 +17,17 @@
         }
     },
     "modules": [
-        {
-            "type": "title",
-            "format": "                             {user-name-colored}{at-symbol-colored}{host-name-colored}"
-        },
         "break",
         {
             "type": "custom",
             "format": "┌{$1} {#1}System Information{#} {$1}┐"
         },
         "break",
+        {
+            "key": "User         ",
+            "keyColor": "cyan",
+            "type": "users"
+        },
         {
             "key": "OS           ",
             "keyColor": "red",
